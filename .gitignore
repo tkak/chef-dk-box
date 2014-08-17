@@ -1,3 +1,6 @@
 .vagrant/
+.bundle/
 builds/
 packer/packer_cache/
+Gemfile.lock
+vendor/
