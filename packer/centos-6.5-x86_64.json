@@ -55,8 +55,7 @@
         "scripts/common/sshd.sh",
         "scripts/common/vagrant.sh",
         "scripts/common/vmtools.sh",
-        "scripts/common/chef.sh",
-        "scripts/centos/cleanup.sh"
+        "scripts/centos/chef-dk.sh"
       ],
       "type": "shell",
       "only": ["virtualbox-iso"]
