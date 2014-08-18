@@ -1,7 +1,23 @@
 ChefDK Box
 ==========
 
-Packer template to prepare Chef Development Environment with ChefDK
+Packer template to prepare Chef Development Environment with ChefDK and
+Docker(kitchen-docker)
+
+
+## Environment
+
+|Box                      |OS               |Tools                                                    |
+|-------------------------|-----------------|---------------------------------------------------------|
+|centos-6.5-x86_64-chef-dk|CentOS 6.5 x86_64|Docker, ChefDK, kitchen-docker, git, vim, zsh + oh-my-zsh|
+
+
+## Requirement
+
+* Virtual Box
+* Vagrant
+* Packer
+
 
 ## Usage
 
@@ -14,6 +30,7 @@ $ packer build centos-6.5-x86_64.json
 $ vagrant box add centos-6.5-x86_64-chef-dk ../builds/virtualbox/centos-6.5-x86_64-chef-dk.box
 $ vagrant box list
 ```
+
 
 ### Develop Chef Cookbook
 
