@@ -21,7 +21,7 @@ Docker(kitchen-docker)
 
 ## Usage
 
-### Make Vagrant Box Image
+Make vagrant box image by using Packer:
 
 ```
 $ git clone git@github.com:tkak/chef-dk-box.git
@@ -31,13 +31,26 @@ $ vagrant box add centos-6.5-x86_64-chef-dk ../builds/virtualbox/centos-6.5-x86_
 $ vagrant box list
 ```
 
-
-### Develop Chef Cookbook
+Create Chef development environment on Virtual Box:
 
 ```
 $ cd /path/to/chef-dk-box
 $ vagrant up
 $ vagrant ssh
+```
+
+Start Chef cookbook development:
+
+```
+i.g.)
+$ zsh  ## If you want to use zsh
+$ git clone https://github.com/tkak/sample-chef-repo.git
+$ cd sample-chef-repo
+$ kitchen init --driver=kitchen-docker 
+
+coding...
+
+$ kitchen test
 ```
 
 ## References
@@ -47,4 +60,14 @@ $ vagrant ssh
 * [Bento](https://github.com/opscode/bento)
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [sample-chef-repo](https://github.com/tkak/sample-chef-repo)
+
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Run style checks and RSpec tests (`bundle exec rake`)
+4. Commit your changes (`git commit -am 'Add some feature'`)
+5. Push to the branch (`git push origin my-new-feature`)
+6. Create new Pull Request
 
