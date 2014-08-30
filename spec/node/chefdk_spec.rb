@@ -18,7 +18,7 @@ describe service('docker') do
 end
 
 describe package('chefdk') do
-  it { should be_installed.with_version('0.2.0') }
+  it { should be_installed.with_version('0.2.1') }
 end
 
 describe file('/home/vagrant/.bashrc') do
