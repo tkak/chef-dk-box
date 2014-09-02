@@ -1,9 +1,5 @@
 require 'spec_helper'
 
-os = {
-  :family => 'ubuntu'
-}
-
 case property[:os][:family]
 when /centos/
   describe package('vim-enhanced') do
