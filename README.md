@@ -50,6 +50,7 @@ $ kitchen test
 |Box                      |OS               |Tools                                                    |
 |-------------------------|-----------------|---------------------------------------------------------|
 |centos-6.5-x86_64-chef-dk|CentOS 6.5 x86_64|Docker, ChefDK, kitchen-docker, git, vim, zsh + oh-my-zsh|
+|ubuntu-14.04-amd64-chef-dk|Ubuntu 14.04 amd64|Docker, ChefDK, kitchen-docker, git, vim, zsh + oh-my-zsh|
 
 
 ## Requirement
