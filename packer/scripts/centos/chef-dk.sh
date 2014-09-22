@@ -12,14 +12,14 @@ install_docker(){
   rpm -Uvh "/tmp/${EPEL}"
 
   yum install -y docker-io
-  service docker start
-  chkconfig docker on
+  /sbin/service docker start
+  /sbin/chkconfig docker on
 }
 
 install_chefdk(){
-  CHEFDK='chefdk-0.2.1-1.el6.x86_64.rpm'
-  wget -O "/tmp/${CHEFDK}" \
-    "https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/${CHEFDK}"
+  CHEFDK="chefdk-${CHEFDK_VERSION}-1.x86_64.rpm"
+  wget --no-check-certificate -O "/tmp/${CHEFDK}" \
+    "https://packagecloud.io/chef/stable/download?distro=6&filename=${CHEFDK}"
   rpm -Uvh "/tmp/${CHEFDK}"
   
   echo 'eval "$(chef shell-init bash)"' >> /home/vagrant/.bashrc
