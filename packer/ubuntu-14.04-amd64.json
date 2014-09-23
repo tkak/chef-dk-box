@@ -78,7 +78,8 @@
         "scripts/ubuntu/sudoers.sh",
         "scripts/common/vagrant.sh",
         "scripts/common/vmtools.sh",
-        "scripts/ubuntu/chef-dk.sh"
+        "scripts/ubuntu/chef-dk.sh",
+        "scripts/common/minimize.sh"
       ],
       "type": "shell",
       "only": ["virtualbox-iso"]
