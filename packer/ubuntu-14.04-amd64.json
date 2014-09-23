@@ -68,7 +68,7 @@
   "provisioners": [
     {
       "environment_vars": [
-        "CHEF_VERSION={{user `chef_version`}}"
+        "CHEFDK_VERSION={{user `chefdk_version`}}"
       ],
       "execute_command": "echo 'vagrant'|{{.Vars}} sudo -S -E bash '{{.Path}}'",
       "scripts": [
@@ -85,7 +85,7 @@
     }
   ],
   "variables": {
-    "chef_version": "latest",
+    "chefdk_version": "0.2.2",
     "mirror": "http://releases.ubuntu.com"
   }
 }
