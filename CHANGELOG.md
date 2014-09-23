@@ -1,11 +1,12 @@
 CHANGELOG
 =========
 
-## 0.2.0 (September 23, 2014)
+## 0.2.1 (September 23, 2014)
 
 Improvements:
 
   - Version up ChefDK v0.2.2 (tkak)
+  - Add a script file for making easier a box image test (tkak)
 
 
 ## 0.2.0 (September 2, 2014)
