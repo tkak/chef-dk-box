@@ -23,9 +23,5 @@ config.each_line do |line|
   end
 end
 
-
-#SpecInfra.configuration.ssh = Net::SSH.start(realhost, user, options)
 set :host, realhost
 set :ssh_options, options
-
-#property[:os] = backend.check_os
