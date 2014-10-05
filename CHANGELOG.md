@@ -1,6 +1,14 @@
 CHANGELOG
 =========
 
+## 0.3.0 (October 4, 2014)
+
+Improvements:
+
+  - Version up ChefDK v0.3.0 (tkak)
+  - Version up Serverspec v2.x (tkak)
+
+
 ## 0.2.1 (September 23, 2014)
 
 Improvements:
