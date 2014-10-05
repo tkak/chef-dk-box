@@ -19,7 +19,7 @@ install_docker(){
 install_chefdk(){
   CHEFDK="chefdk-${CHEFDK_VERSION}-1.x86_64.rpm"
   wget --no-check-certificate -O "/tmp/${CHEFDK}" \
-    "https://packagecloud.io/chef/stable/download?distro=6&filename=${CHEFDK}"
+    "https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/${CHEFDK}"
   rpm -Uvh "/tmp/${CHEFDK}"
   
   echo 'eval "$(chef shell-init bash)"' >> /home/vagrant/.bashrc

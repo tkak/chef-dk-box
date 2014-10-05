@@ -15,7 +15,7 @@ install_docker(){
 install_chefdk(){
   CHEFDK="chefdk_${CHEFDK_VERSION}-1_amd64.deb"
   wget --no-check-certificate -O "/tmp/${CHEFDK}" \
-    "https://packagecloud.io/chef/stable/download?distro=precise&filename=${CHEFDK}"
+    "http://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/${CHEFDK}"
   dpkg -i /tmp/${CHEFDK}
   
   echo 'eval "$(chef shell-init bash)"' >> /home/vagrant/.bashrc
