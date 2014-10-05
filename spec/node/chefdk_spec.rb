@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-case property[:os][:family]
+case os[:family]
 when /centos/
   describe package('vim-enhanced') do
     it { should be_installed }
