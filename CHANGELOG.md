@@ -1,7 +1,14 @@
 CHANGELOG
 =========
 
-## 0.3.0 (October 4, 2014)
+## 0.2.3 (November 8, 2014)
+
+Improvements:
+
+  - Version up ChefDK v0.3.2 (tkak)
+
+
+## 0.2.2 (October 4, 2014)
 
 Improvements:
 
