@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 case os[:family]
-when /centos/
+when /redhat/
   describe package('vim-enhanced') do
     it { should be_installed }
   end
@@ -11,7 +11,7 @@ when /centos/
   end
 
   describe package('chefdk') do
-    it { should be_installed.with_version('0.3.0') }
+    it { should be_installed.with_version('0.3.2') }
   end
 
 when /ubuntu/
@@ -24,9 +24,8 @@ when /ubuntu/
   end
 
   describe package('chefdk') do
-    it { should be_installed.with_version('0.3.0-1') }
+    it { should be_installed.with_version('0.3.2-1') }
   end
-
 end
 
 describe package('git') do
@@ -45,4 +44,3 @@ end
 describe file('/home/vagrant/.zshrc') do
   its(:content) { should match /eval \"\$\(chef shell-init zsh\)\"/ }
 end
-
