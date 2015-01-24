@@ -9,7 +9,7 @@
       "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
       "guest_os_type": "RedHat_64",
       "http_directory": "http",
-      "iso_checksum": "32c7695b97f7dcd1f59a77a71f64f2957dddf738",
+      "iso_checksum": "08be09fd7276822bd3468af8f96198279ffc41f0",
       "iso_checksum_type": "sha1",
       "iso_url": "{{user `mirror`}}/6.6/isos/x86_64/CentOS-6.6-x86_64-bin-DVD1.iso",
       "output_directory": "centos-6.6-x86_64-virtualbox",
@@ -63,7 +63,7 @@
     }
   ],
   "variables": {
-    "chefdk_version": "0.3.2",
+    "chefdk_version": "0.3.6",
     "mirror": "http://mirrors.kernel.org/centos"
   }
 }

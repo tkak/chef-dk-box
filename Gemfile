@@ -1,3 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'serverspec', '~> 2.1.0'
+gem 'serverspec'
+gem 'rake'
