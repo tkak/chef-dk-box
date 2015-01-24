@@ -11,7 +11,7 @@ when /redhat/
   end
 
   describe package('chefdk') do
-    it { should be_installed.with_version('0.3.2') }
+    it { should be_installed.with_version('0.3.6') }
   end
 
 when /ubuntu/
@@ -24,7 +24,7 @@ when /ubuntu/
   end
 
   describe package('chefdk') do
-    it { should be_installed.with_version('0.3.2-1') }
+    it { should be_installed.with_version('0.3.6-1') }
   end
 end
 

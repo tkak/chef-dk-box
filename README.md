@@ -17,7 +17,7 @@ Create Vagrantfile:
 Vagrant.configure("2") do |config|
 
   config.vm.define :node do |node|
-    node.vm.box = "tkak/centos-6.5-x86_64-chef-dk"
+    node.vm.box = "tkak/centos-6.6-x86_64-chef-dk"
   end
 
 end
@@ -49,7 +49,7 @@ $ kitchen test
 
 |Box                      |OS               |Tools                                                    |
 |-------------------------|-----------------|---------------------------------------------------------|
-|centos-6.5-x86_64-chef-dk|CentOS 6.5 x86_64|Docker, ChefDK, kitchen-docker, git, vim, zsh + oh-my-zsh|
+|centos-6.6-x86_64-chef-dk|CentOS 6.6 x86_64|Docker, ChefDK, kitchen-docker, git, vim, zsh + oh-my-zsh|
 |ubuntu-14.04-amd64-chef-dk|Ubuntu 14.04 amd64|Docker, ChefDK, kitchen-docker, git, vim, zsh + oh-my-zsh|
 
 
@@ -67,8 +67,8 @@ Make a vagrant box image by using Packer:
 ```
 $ git clone git@github.com:tkak/chef-dk-box.git
 $ cd packer
-$ packer build centos-6.5-x86_64.json
-$ vagrant box add centos-6.5-x86_64-chef-dk ../builds/virtualbox/centos-6.5-x86_64-chef-dk.box
+$ packer build centos-6.6-x86_64.json
+$ vagrant box add centos-6.6-x86_64-chef-dk ../builds/virtualbox/centos-6.6-x86_64-chef-dk.box
 $ vagrant box list
 ```
 

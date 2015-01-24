@@ -2,17 +2,17 @@
   "builders": [
     {
       "boot_command": [
-        "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/centos-6.5/ks.cfg<enter><wait>"
+        "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/centos-6.6/ks.cfg<enter><wait>"
       ],
       "boot_wait": "10s",
       "disk_size": 10240,
       "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
       "guest_os_type": "RedHat_64",
       "http_directory": "http",
-      "iso_checksum": "32c7695b97f7dcd1f59a77a71f64f2957dddf738",
+      "iso_checksum": "08be09fd7276822bd3468af8f96198279ffc41f0",
       "iso_checksum_type": "sha1",
-      "iso_url": "{{user `mirror`}}/6.5/isos/x86_64/CentOS-6.5-x86_64-bin-DVD1.iso",
-      "output_directory": "centos-6.5-x86_64-virtualbox",
+      "iso_url": "{{user `mirror`}}/6.6/isos/x86_64/CentOS-6.6-x86_64-bin-DVD1.iso",
+      "output_directory": "centos-6.6-x86_64-virtualbox",
       "shutdown_command": "echo 'vagrant'|sudo -S /sbin/halt -h -p",
       "ssh_password": "vagrant",
       "ssh_port": 22,
@@ -34,12 +34,12 @@
         ]
       ],
       "virtualbox_version_file": ".vbox_version",
-      "vm_name": "centos-6.5-x86_64"
+      "vm_name": "centos-6.6-x86_64"
     }
   ],
   "post-processors": [
     {
-      "output": "../builds/{{.Provider}}/centos-6.5-x86_64-chef-dk.box",
+      "output": "../builds/{{.Provider}}/centos-6.6-x86_64-chef-dk.box",
       "type": "vagrant",
       "only": ["virtualbox-iso"]
     }
@@ -63,7 +63,7 @@
     }
   ],
   "variables": {
-    "chefdk_version": "0.3.2",
+    "chefdk_version": "0.3.6",
     "mirror": "http://mirrors.kernel.org/centos"
   }
 }
