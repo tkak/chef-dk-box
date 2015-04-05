@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+## 0.4.0 (April 5, 2015)
+
+Improvements:
+
+  - Version up ChefDK v0.4.0 (Takaaki FURUKAWA)
+
+
 ## 0.3.0 (January 24, 2015)
 
 Improvements:

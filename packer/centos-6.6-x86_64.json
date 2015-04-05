@@ -63,7 +63,7 @@
     }
   ],
   "variables": {
-    "chefdk_version": "0.3.6",
+    "chefdk_version": "0.4.0",
     "mirror": "http://mirrors.kernel.org/centos"
   }
 }
