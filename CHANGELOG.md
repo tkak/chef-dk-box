@@ -5,7 +5,7 @@ CHANGELOG
 
 Improvements:
 
-  - Version up ChefDK v0.4.0 (Takaaki FURUKAWA)
+  - Version up ChefDK v0.4.0 (Takaaki FURUKAWA) tkak/chef-dk-box#8
 
 
 ## 0.3.0 (January 24, 2015)
