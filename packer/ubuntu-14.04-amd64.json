@@ -21,7 +21,7 @@
         " netcfg/get_domain=vm<wait>",
         " netcfg/get_hostname=vagrant<wait>",
         " noapic<wait>",
-        " ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ubuntu-14.04/ks.cfg<wait>",
+        " ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ubuntu-14.04.5/ks.cfg<wait>",
         " -- <wait>",
         "<enter><wait>"
       ],
@@ -30,10 +30,10 @@
       "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
       "guest_os_type": "Ubuntu_64",
       "http_directory": "http",
-      "iso_checksum": "4d94f6111b8fe47da94396180ce499d8c0bb44f3",
+      "iso_checksum": "5e567024c385cc8f90c83d6763c6e4f1cd5deb6f",
       "iso_checksum_type": "sha1",
-      "iso_url": "{{user `mirror`}}/14.04/ubuntu-14.04-server-amd64.iso",
-      "output_directory": "ubuntu-14.04-amd64-virtualbox",
+      "iso_url": "{{user `mirror`}}/14.04/ubuntu-14.04.5-server-amd64.iso",
+      "output_directory": "ubuntu-14.04.5-amd64-virtualbox",
       "shutdown_command": "echo 'vagrant'|sudo -S shutdown -P now",
       "ssh_password": "vagrant",
       "ssh_port": 22,
@@ -55,12 +55,12 @@
         ]
       ],
       "virtualbox_version_file": ".vbox_version",
-      "vm_name": "ubuntu-14.04-amd64"
+      "vm_name": "ubuntu-14.04.5-amd64"
     }
   ],
   "post-processors": [
     {
-      "output": "../builds/{{.Provider}}/ubuntu-14.04-amd64-chef-dk.box",
+      "output": "../builds/{{.Provider}}/ubuntu-14.04.5-amd64-chef-dk.box",
       "type": "vagrant",
       "only": ["virtualbox-iso"]
     }
